@@ -11,7 +11,7 @@ public class CSVParserException extends Exception {
         super(message, cause);
     }
 
-    public CSVParserException(int lineNumber, String message) {
-        this(String.format(HEADER_FORMAT, lineNumber, message));
+    public CSVParserException(int rowNumber, String message) {
+        this(String.format(HEADER_FORMAT, rowNumber, message));
     }
 }
